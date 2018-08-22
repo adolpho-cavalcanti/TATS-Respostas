@@ -55,6 +55,12 @@ public class Funcionario {
             else 
                 return sal * 0.9;
         } 
+        else if(this.getCargo().equalsIgnoreCase("DBA")) {
+            if(sal >= 2000)
+                return sal * 0.75;
+            else 
+                return sal * 0.85;
+        } 
         return sal;
     }
    
