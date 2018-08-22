@@ -40,4 +40,14 @@ public class CalcTest {
         f.setCargo("DBA");
         assertEquals(7500f, c.calcular(f),0.01);
     }
+    
+    @Test
+    public void calcularSalarioTestador() {
+        Funcionario f = new Funcionario();
+        f.setNome("Dagu");
+        f.setEmail("dadu@gmail.com");
+        f.setSalarioBase(1000.0f);
+        f.setCargo("TESTADOR");
+        assertEquals(850f, f.calcular(),0.01);
+    }
 }
