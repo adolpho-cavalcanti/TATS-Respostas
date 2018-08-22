@@ -27,6 +27,11 @@ public class Calculadora {
                 return sal * 0.75;
             else 
                 return sal * 0.85;
+        } else if(f.getCargo().equalsIgnoreCase("GERENTE")) {
+            if(sal >= 2000)
+                return sal * 0.70;
+            else 
+                return sal * 0.80;
         }
         return sal;
 
