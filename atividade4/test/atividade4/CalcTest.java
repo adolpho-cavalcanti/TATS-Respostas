@@ -57,8 +57,8 @@ public class CalcTest {
         Funcionario f = new Funcionario();       
         f.setNome("Bahia");
         f.setEmail("bahia@gmail.com");
-        f.setSalarioBase(550.0f);
+        f.setSalarioBase(2500.0f);
         f.setCargo("GERENTE");
-        assertEquals(467.50f, f.calcular(),0.01);
+        assertEquals(2000f, f.calcular(),0.01);
     }
 }

@@ -47,7 +47,7 @@ public class Funcionario {
         this.Cargo = Cargo;
     }
     
-    /*public double calcular() {
+    public double calcular() {
         double sal = this.getSalarioBase();
         if(this.getCargo().equalsIgnoreCase("GERENTE")) {
             if(sal >= 5000)
@@ -56,6 +56,6 @@ public class Funcionario {
                 return sal * 0.80;
         } 
         return sal;
-    }*/
+    }
    
 }
