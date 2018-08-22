@@ -10,25 +10,20 @@ package atividade4;
  * @author acn20
  */
 public class Calculadora {
-    /*public static double calcular(Funcionario f) {
+    public static double calcular(Funcionario f) {
         double sal = f.getSalarioBase();
         if(f.getCargo().equalsIgnoreCase("DESENVOLVEDOR")) {
             if(sal >= 3000)
                 return sal * 0.8;
             else 
                 return sal * 0.9;
-        } else if(f.getCargo().equalsIgnoreCase("GERENTE")) {
-            if(sal >= 3000)
+        } else if(f.getCargo().equalsIgnoreCase("DBA")) {
+            if(sal >= 1000)
                 return sal * 0.75;
             else 
                 return sal * 0.85;
-        } else if(f.getCargo().equalsIgnoreCase("TESTADOR")) {
-            if(sal >= 3000)
-                return sal * 0.7;
-            else 
-                return sal * 0.8;
         }
         return sal;
 
-    }*/
+    }
 }
