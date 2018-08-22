@@ -51,4 +51,14 @@ public class CalcTest {
         f.setCargo("TESTADOR");
         assertEquals(850f, c.calcular(f),0.01);
     }
+    
+    @Test
+    public void calcularSalarioGerente() {
+        Funcionario f = new Funcionario();       
+        f.setNome("Bahia");
+        f.setEmail("bahia@gmail.com");
+        f.setSalarioBase(550.0f);
+        f.setCargo("GERENTE");
+        assertEquals(467.50f, f.calcular(),0.01);
+    }
 }

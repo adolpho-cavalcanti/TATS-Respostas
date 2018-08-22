@@ -49,11 +49,11 @@ public class Funcionario {
     
     /*public double calcular() {
         double sal = this.getSalarioBase();
-        if(this.getCargo().equalsIgnoreCase("TESTADOR")) {
-            if(sal >= 2000)
-                return sal * 0.75;
+        if(this.getCargo().equalsIgnoreCase("GERENTE")) {
+            if(sal >= 5000)
+                return sal * 0.70;
             else 
-                return sal * 0.85;
+                return sal * 0.80;
         } 
         return sal;
     }*/
