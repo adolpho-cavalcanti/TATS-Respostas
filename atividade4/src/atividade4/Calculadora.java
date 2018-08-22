@@ -10,17 +10,25 @@ package atividade4;
  * @author acn20
  */
 public class Calculadora {
-    Funcionario f = new Funcionario();
-    public static void main(String[] args) {
-        Funcionario f = new Funcionario();
-        f.setCargo("Desenvolvedor");
-        f.setEmail("jose@jose.com");
-        f.setNome("jose");
-        f.setSalarioBase(100.0f);
-    
-        if(f.Cargo.equalsIgnoreCase("Desenvolvedor")) {
-            double salLiq = f.salarioBase * 0.8;
+    public static double calcular(Funcionario f) {
+        double sal = f.getSalarioBase();
+        if(f.getCargo().equalsIgnoreCase("DESENVOLVEDOR")) {
+            if(sal >= 3000)
+                return sal * 0.8;
+            else 
+                return sal * 0.9;
+        } else if(f.getCargo().equalsIgnoreCase("GERENTE")) {
+            if(sal >= 3000)
+                return sal * 0.75;
+            else 
+                return sal * 0.85;
+        } else if(f.getCargo().equalsIgnoreCase("TESTADOR")) {
+            if(sal >= 3000)
+                return sal * 0.7;
+            else 
+                return sal * 0.8;
         }
-        System.out.println("salario liquido eh: ", + f.getSalarioBase());
+        return sal;
+
     }
 }

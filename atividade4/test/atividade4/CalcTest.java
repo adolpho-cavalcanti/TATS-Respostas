@@ -22,10 +22,11 @@ public class CalcTest {
     @Test
     public void calcularSalario() {
         Funcionario f = new Funcionario();
+        Calculadora c = new Calculadora();
         f.setNome("Jose");
         f.setEmail("jose@gmail.com");
         f.setSalarioBase(5000.0f);
         f.setCargo("DESENVOLVEDOR");
-        assertEquals(4000f, f.calcular(),0.01);
+        assertEquals(4000f, c.calcular(f),0.01);
     }
 }
