@@ -18,7 +18,12 @@ public class Calculadora {
             else 
                 return sal * 0.9;
         } else if(f.getCargo().equalsIgnoreCase("DBA")) {
-            if(sal >= 1000)
+            if(sal >= 2000)
+                return sal * 0.75;
+            else 
+                return sal * 0.85;
+        } else if(f.getCargo().equalsIgnoreCase("TESTADOR")) {
+            if(sal >= 2000)
                 return sal * 0.75;
             else 
                 return sal * 0.85;

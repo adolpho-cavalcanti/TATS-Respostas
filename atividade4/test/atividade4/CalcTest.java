@@ -44,10 +44,11 @@ public class CalcTest {
     @Test
     public void calcularSalarioTestador() {
         Funcionario f = new Funcionario();
+        Calculadora c = new Calculadora();        
         f.setNome("Dagu");
         f.setEmail("dadu@gmail.com");
         f.setSalarioBase(1000.0f);
         f.setCargo("TESTADOR");
-        assertEquals(850f, f.calcular(),0.01);
+        assertEquals(850f, c.calcular(f),0.01);
     }
 }
