@@ -47,5 +47,15 @@ public class Funcionario {
         this.Cargo = Cargo;
     }
     
+    public double calcular() {
+        double sal = this.getSalarioBase();
+        if(this.getCargo().equalsIgnoreCase("DESENVOLVEDOR")) {
+            if(sal >= 3000)
+                return sal * 0.8;
+            else 
+                return sal * 0.9;
+        } 
+        return sal;
+    }
    
 }
